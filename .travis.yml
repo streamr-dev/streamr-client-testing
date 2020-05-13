@@ -13,7 +13,7 @@ git:
   submodules: false
 env:
   global:
-  - NODE_VERSION=13.14.0
+  - NODE_VERSION=12
 before_install:
 - curl -s http://get.sdkman.io | bash
 - echo sdkman_auto_answer=true > ~/.sdkman/etc/config
