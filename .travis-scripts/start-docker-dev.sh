@@ -6,7 +6,7 @@ if [ ! -d streamr-docker-dev ]; then # Skip clone on subsequent attemps.
 	git clone https://github.com/streamr-dev/streamr-docker-dev.git
 fi
 if [ "$1" == "production" ]; then
-    #sed -i "s/broker-node:dev/broker-node:latest/g" $TRAVIS_BUILD_DIR/streamr-docker-dev/docker-compose.override.yml
+    sed -i "s/broker-node:dev/broker-node:latest/g" $TRAVIS_BUILD_DIR/streamr-docker-dev/docker-compose.override.yml
     sed -i "s/engine-and-editor:dev/engine-and-editor:latest/g" $TRAVIS_BUILD_DIR/streamr-docker-dev/docker-compose.override.yml
     sed -i "s/ethereum-watcher:dev/ethereum-watcher:latest/g" $TRAVIS_BUILD_DIR/streamr-docker-dev/docker-compose.override.yml
     sed -i "s/data-union-server:dev/data-union-server:latest/g" $TRAVIS_BUILD_DIR/streamr-docker-dev/docker-compose.override.yml
