@@ -14,5 +14,5 @@ if [ "$1" == "production" ]; then
     cat $TRAVIS_BUILD_DIR/streamr-docker-dev/docker-compose.override.yml
 fi
 sudo ifconfig docker0 10.200.10.1/24
-"$TRAVIS_BUILD_DIR/streamr-docker-dev/streamr-docker-dev/bin.sh" start nginx
-"$TRAVIS_BUILD_DIR/streamr-docker-dev/streamr-docker-dev/bin.sh" start engine-and-editor --wait
+
+"$TRAVIS_BUILD_DIR/streamr-docker-dev/streamr-docker-dev/bin.sh" start smart-contracts-init nginx engine-and-editor --wait
