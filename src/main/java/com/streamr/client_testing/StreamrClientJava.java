@@ -2,6 +2,8 @@ package com.streamr.client_testing;
 
 import com.streamr.client.StreamrClient;
 import com.streamr.client.rest.Stream;
+import com.streamr.client.utils.Address;
+import com.streamr.client.utils.GroupKey;
 
 public class StreamrClientJava extends StreamrClientWrapper {
     private final StreamrClient streamrClient;
@@ -16,8 +18,8 @@ public class StreamrClientJava extends StreamrClientWrapper {
     }
 
     @Override
-    public String getAddress() {
-        return streamrClient.getPublisherId();
+    public Address getAddress() {
+        return new Address(streamrClient.getPublisherId());
     }
 
     @Override
