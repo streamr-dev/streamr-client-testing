@@ -329,7 +329,7 @@ public class StreamTester {
                 publisher.publish(stream, payload);
 
                 if (testCorrectness) {
-                    publishersMsgStacks.get(new Address(publisher.getPublisherId())).addLast(payloadString);
+                    publishersMsgStacks.get(publisher.getPublisherId()).addLast(payloadString);
                 }
                 log.debug("{} published {}", publisher.getPublisherId(), payloadString);
             }
@@ -352,7 +352,7 @@ public class StreamTester {
                 }
 
                 if (testCorrectness) {
-                    publishersMsgStacks.get(new Address(publisher.getPublisherId())).addLast(payloadString);
+                    publishersMsgStacks.get(publisher.getPublisherId()).addLast(payloadString);
                 }
                 log.debug("{} published {}", publisher.getPublisherId(), payloadString);
             }
@@ -380,7 +380,7 @@ public class StreamTester {
                     }
 
                     if (testCorrectness) {
-                        publishersMsgStacks.get(new Address(publisher.getPublisherId())).addLast(payloadString);
+                        publishersMsgStacks.get(publisher.getPublisherId()).addLast(payloadString);
                     }
                     log.debug("{} published {}", publisher.getPublisherId(), payloadString);
                 }

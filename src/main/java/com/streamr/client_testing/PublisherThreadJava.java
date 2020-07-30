@@ -42,7 +42,7 @@ public class PublisherThreadJava extends PublisherThread {
 
     @Override
     public Address getPublisherId() {
-        return new Address(publisher.getPublisherId());
+        return publisher.getPublisherId();
     }
 
     @Override

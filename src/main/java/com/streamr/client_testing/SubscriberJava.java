@@ -21,7 +21,7 @@ public class SubscriberJava extends Subscriber {
 
     @Override
     public Address getSubscriberId() {
-        return new Address(this.streamrClient.getPublisherId());
+        return this.streamrClient.getPublisherId();
     }
 
     @Override

@@ -19,7 +19,7 @@ public class StreamrClientJava extends StreamrClientWrapper {
 
     @Override
     public Address getAddress() {
-        return new Address(streamrClient.getPublisherId());
+        return streamrClient.getPublisherId();
     }
 
     @Override
