@@ -17,7 +17,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile 'com.streamr:client:2.0.3-SNAPSHOT' // always run against latest
+    compile 'com.streamr:client:+' // always run against latest
     compile 'commons-cli:commons-cli:1.4'
 
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.13.3'
