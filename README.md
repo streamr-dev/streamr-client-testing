@@ -1,3 +1,5 @@
+# Moved to https://github.com/streamr-dev/network-monorepo/tree/main/packages/cross-client-testing
+
 # Streamr client libraries end-to-end testing
 
 This tool allows to run/test different stream setups using the developed client libraries. These setups can be either part of the CI or run indefinitely against the staging environment to better mock the production environment.
